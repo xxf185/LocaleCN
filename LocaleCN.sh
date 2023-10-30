@@ -57,10 +57,10 @@ elif [ "${release}" == "ubuntu" ]; then
 	rm -rf /etc/default/locale
 	rm -rf /etc/default/locale.conf
 	cd /etc/
-	wget https://raw.githubusercontent.com/FunctionClub/LocaleCN/master/locale.gen > /dev/null 2>&1
+	wget https://raw.githubusercontent.com/xxf185/LocaleCN/main/locale.gen > /dev/null 2>&1
 	locale-gen
 	cd /etc/default/
-	wget https://raw.githubusercontent.com/FunctionClub/LocaleCN/master/locale.conf > /dev/null 2>&1
+	wget https://raw.githubusercontent.com/xxf185/LocaleCN/main/locale.conf > /dev/null 2>&1
 	cp locale.conf locale
 fi
 
@@ -68,9 +68,7 @@ fi
 clear
 echo "Your VPS Language setting is changed to Chinese(Simplified)"
 echo "Reconnect to your VPS to check it"
-echo ""
-echo "Powered By zhujiboke.com "
-echo "QQ Group: 119612388"
+echo 
 
 # Delete self
 cd ${dir}
